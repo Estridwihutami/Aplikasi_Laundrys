@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background2">
+
+
+    <TextView
+        android:id="@+id/textViewLaundryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="LAUNDRY PER-KILO"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Laundry Description -->
+
+    <!-- Laundry Price -->
+    <ImageView
+        android:id="@+id/imageViewLaundry"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/baju_perkilo"
+        app:layout_constraintMarginStart="16dp"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewLaundryTitle" />
+
+    <TextView
+        android:id="@+id/textViewLaundryDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Laundry Per-Kilo"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintMarginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/imageViewLaundry"
+        app:layout_constraintTop_toTopOf="@id/imageViewLaundry" />
+
+    <TextView
+        android:id="@+id/textViewLaundryPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 2.000"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewLaundryDescription"
+        app:layout_constraintStart_toStartOf="@id/textViewLaundryDescription" />
+
+    <!-- Quantity Input -->
+
+    <!-- Order Button -->
+    <EditText
+        android:id="@+id/editTextLaundryQuantity"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/bg_input"
+        android:hint="0"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/imageViewLaundry" />
+
+    <Button
+        android:id="@+id/buttonOrderLaundry"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:text="BUAT PESANAN"
+        android:textColor="#FF000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

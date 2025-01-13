@@ -25,17 +25,20 @@
             android:layout_height="wrap_content">
 
             <!-- Logo -->
+
+            <!-- Title -->
+
             <ImageView
                 android:id="@+id/imageViewLogo"
                 android:layout_width="199dp"
                 android:layout_height="202dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="60dp"
                 android:src="@drawable/logo1"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <!-- Title -->
             <TextView
                 android:id="@+id/textViewTitle"
                 android:layout_width="wrap_content"
@@ -100,9 +103,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="OR"
-                app:layout_constraintTop_toBottomOf="@id/buttonLogin"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintTop_toBottomOf="@id/buttonLogin" />
 
             <!-- Google Login -->
             <ImageView
@@ -111,9 +114,9 @@
                 android:layout_height="54dp"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/google"
-                app:layout_constraintTop_toBottomOf="@id/textViewOr"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewOr" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

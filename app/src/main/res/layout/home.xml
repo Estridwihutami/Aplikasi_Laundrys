@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/background2">
+
+    <TextView
+        android:id="@+id/textView"
+        app:layout_constraintMarginStart="16dp"
+        app:layout_constraintMarginTop="43dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPremiumWash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:layout_width="190dp"
+        android:layout_height="169dp"
+        android:src="@drawable/premiumwash"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="396dp" />
+
+    <ImageView
+        android:id="@+id/imageViewLaundryPerKilo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewPremiumWash"
+        android:layout_width="172dp"
+        android:layout_height="164dp"
+        android:src="@drawable/laundryperkilo"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <!-- Premium Wash Label -->
+
+    <!-- Laundry Per-Kilo Label -->
+
+    <TextView
+        android:id="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ESTRI DWI HUTAMI"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <TextView
+        android:id="@+id/textViewPremiumWash"
+        app:layout_constraintEnd_toEndOf="@id/imageViewPremiumWash"
+        app:layout_constraintStart_toStartOf="@id/imageViewPremiumWash"
+        app:layout_constraintTop_toBottomOf="@id/imageViewPremiumWash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PREMIUM WASH"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="565dp" />
+
+    <TextView
+        android:id="@+id/textViewLaundryPerKilo"
+        app:layout_constraintEnd_toEndOf="@id/imageViewLaundryPerKilo"
+        app:layout_constraintStart_toStartOf="@id/imageViewLaundryPerKilo"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLaundryPerKilo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAUNDRY PER-KILO"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <Button
+        android:id="@+id/buttonPesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:text="PESANAN"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="737dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background2">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="PREMIUM WASH"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewJeans"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/jeans"
+        app:layout_constraintMarginStart="16dp"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewJeans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jeans"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/imageViewJeans"
+        app:layout_constraintStart_toEndOf="@id/imageViewJeans"
+        app:layout_constraintMarginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textViewJeansPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 5.000"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewJeans"
+        app:layout_constraintStart_toStartOf="@id/textViewJeans" />
+
+    <!-- Jaket Section -->
+
+    <EditText
+        android:id="@+id/editTextJeansQuantity"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/bg_input"
+        android:hint="0"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/imageViewJeans" />
+
+    <ImageView
+        android:id="@+id/imageViewJaket"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/jaket"
+        app:layout_constraintMarginStart="16dp"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewJeans" />
+
+    <TextView
+        android:id="@+id/textViewJaketPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 6.000"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/textViewJaket"
+        app:layout_constraintTop_toBottomOf="@id/textViewJaket" />
+
+    <TextView
+        android:id="@+id/textViewJaket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jaket"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintMarginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/imageViewJaket"
+        app:layout_constraintTop_toTopOf="@id/imageViewJaket" />
+
+    <!-- Sepatu Section -->
+
+    <EditText
+        android:id="@+id/editTextJaketQuantity"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/bg_input"
+
+        android:inputType="number"
+        android:padding="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/imageViewJaket" />
+
+    <ImageView
+        android:id="@+id/imageViewSepatu"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/sepatu"
+        app:layout_constraintMarginStart="16dp"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewJaket" />
+
+    <TextView
+        android:id="@+id/textViewSepatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sepatu"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/imageViewSepatu"
+        app:layout_constraintStart_toEndOf="@id/imageViewSepatu"
+        app:layout_constraintMarginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textViewSepatuPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 5.000"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewSepatu"
+        app:layout_constraintStart_toStartOf="@id/textViewSepatu" />
+
+    <!-- Order Button -->
+
+    <EditText
+        android:id="@+id/editTextSepatuQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/bg_input"
+        android:hint="0"
+        android:inputType="number"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/imageViewSepatu" />
+
+    <Button
+        android:id="@+id/buttonOrder"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:text="BUAT PESANAN"
+        android:textColor="#FF000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
